@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'NT Josefine';
+    src: url('fonts/subset-NTJosefine.woff2') format('woff2'),
+        url('fonts/subset-NTJosefine.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+#cart-point {
+    height: 25px;
+}
+
+#cart {
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 2;
+}
+
+.shopping-cart {
+    font-family: 'Satoshi', sans-serif;
+    width: 600px;
+    height: 423px;
+    margin: 150px 330px 0px 330px;
+    background: #311f13;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #f4decb;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+   
+.item {
+    padding: 20px 30px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item:nth-last-child() {
+    border-top:  1px solid #E1E8EE;
+    border-bottom:  1px solid #E1E8EE;
+}
+
+.buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+}
+.delete-btn,
+.like-btn {
+    display: inline-block;
+    Cursor: pointer;
+}
+.delete-btn {
+    width: 18px;
+    height: 17px;
+    background: url(&amp;quot;delete-icn.svg&amp;quot;) no-repeat center;
+    padding-bottom: 10px;
+}
+   
+.delete-btn img {
+    width: 20px;
+}
+
+.is-active {
+    animation-name: animate;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(28);
+    animation-fill-mode: forwards;
+}
+   
+@keyframes animate {
+    0%   { background-position: left;  }
+    50%  { background-position: right; }
+    100% { background-position: right; }
+}
+
+.image {
+    margin-right: 50px;
+    padding-top: -10px;
+}
+
+.image img {
+    width: 90px;
+}
+
+.description {
+    padding-top: 30px;
+    margin-right: 60px;
+    width: 115px;
+}
+   
+.description span {
+    display: block;
+    font-size: 14px;
+    color: #c3b2a3;
+    font-weight: 400;
+}
+
+.quantity {
+    padding-top: 30px;
+    margin-right: 60px;
+}
+.quantity input {
+    border: none;
+    text-align: center;
+    width: 35px;
+    font-size: 16px;
+    color: #f4decb;
+    background-color: transparent;
+    font-weight: 400;
+}
+   
+
+   
+button:focus,
+input:focus {
+    outline:0;
+}
+
+.total-price {
+    width: 83px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #c3b2a3;
+    font-weight: 300;
+}

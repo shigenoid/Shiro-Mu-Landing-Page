@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/navbar.css" />
+        <link rel="stylesheet" href="assets/css/menu-info.css"/>
+        <link rel="stylesheet" href="assets/css/footer.css"/>
+        <link rel="stylesheet" href="assets/css/cart.css"/>
+    
+    </head>
+    <body>
+        <div id="black-bg"></div>
+        <div id="start">you can't see this text btw</div>
+        <header>
+            <nav class="nav-header">
+              <div class="header_logo">
+                <a href="index.html"><div class="nav-logo"><img class="img-logo" src="assets/image/shiromu-icon.svg"></div></a>
+                <a href="index.html"><h4>shiro-mu</h4></a>
+              </div>
+        
+              <ul class="header_menu">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                  <a href="index.html">Reviews</a>
+                </li>
+                <li>
+                  <a href="index.html">Contact</a>
+                </li>
+                <li class="li_button" style="margin-left: 235px;">
+                  <a href="#start">
+                    <button onclick="showCart()" class="nav_button" role="button">Cart</button>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+      </header>
+          
+
+          <section id="cart">
+            <div class="shopping-cart">
+              <!-- Title -->
+              <div class="title">
+                Piring-Mu
+              </div>
+             
+              
+              <div id="foodItem" class="item">
+             
+                <div class="image">
+                  <img id="food-img" src="assets/image/rame-bowl.png" alt="" />
+                </div>
+             
+                <div class="description">
+                  <span id="foodName">Ramen-Mu</span>
+                </div>
+             
+                <div class="quantity">
+                  <input id="quantities" type="text" name="name" value="1pcs">
+                </div>
+             
+                <div class="total-price" id="total-price">Rp 59.999</div>
+              </div>
+            </div>
+
+          </section>
+
+          <section id="menu-heading">
+            <div class="food-heading">
+                <img src="assets/image/rame-bowl.png" id="heading-img">
+            </div>
+
+            <div class="content">
+                <h1 id="title">Ramen-Mu</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum asperiores, consequuntur 
+                    quaerat iste sit animi totam dolorum numquam excepturi fuga eius ad tenetur reiciendis nihil 
+                    delectus tempora mollitia dicta?
+                </p>
+                <div class="price_order">
+                    <div class="price">
+                        <h2 id="price_cont">Rp 59.999</h2>
+                        <p id="discount_price_cont">per piring</p>
+                    </div>
+                    <button onclick="addRamen()" class="add-to-cart" id="cartHeading">
+                        <img src="assets/image/add-to-cart.png">
+                    </button>
+                </div>
+            </div>
+          </section>
+          <section id="menu">
+            <div class="cards">
+                <div class="card">
+                  <img class="menu-img" src="assets/image/rame-bowl.png">
+                  <div class="card-content">
+                    <div class="card-info">
+                      <h4 id="food-name-card">Ramen-Mu</h4>
+                      <p id="price-card">Rp 59K</p>
+                    </div>
+                    <button class="cart-light" onclick="addRamen()">
+                      <img src="assets/image/add-to-cart-light.png">
+                    </button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="menu-img" src="assets/image/wagashi.png">
+                  <div class="card-content">
+                    <div class="card-info">
+                      <h4 id="food-name-card">Wagashi</h4>
+                      <p id="price-card">Rp 39K</p>
+                    </div>
+                    <button class="cart-light" onclick="addWagashi()">
+                      <img src="assets/image/add-to-cart-light.png">
+                    </button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="menu-img" src="assets/image/dimsum.png">
+                  <div class="card-content">
+                    <div class="card-info">
+                      <h4 id="food-name-card">Dimsum</h4>
+                      <p id="price-card">Rp 29K</p>
+                    </div>
+                    <button class="cart-light" onclick="addDimsum()">
+                      <img src="assets/image/add-to-cart-light.png">
+                    </button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="menu-img" src="assets/image/karemu.png">
+                  <div class="card-content">
+                    <div class="card-info">
+                      <h4 id="food-name-card">Kare-Mu</h4>
+                      <p id="price-card">Rp 64K</p>
+                    </div>
+                    <button class="cart-light" onclick="addKaremu()">
+                      <img src="assets/image/add-to-cart-light.png">
+                    </button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="menu-img" src="assets/image/donburi.png">
+                  <div class="card-content">
+                    <div class="card-info">
+                      <h4 id="food-name-card">Donburi</h4>
+                      <p id="price-card">Rp 69K</p>
+                    </div>
+                    <button class="cart-light" onclick="addDonburi()">
+                      <img src="assets/image/add-to-cart-light.png">
+                    </button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="menu-img" src="assets/image/wonsum.png">
+                  <div class="card-content">
+                    <div class="card-info">
+                      <h4 id="food-name-card">Won-Sum</h4>
+                      <p id="price-card">Rp 21K</p>
+                    </div>
+                    <button class="cart-light" onclick="addWonsum()">
+                      <img src="assets/image/add-to-cart-light.png">
+                    </button>
+                  </div>
+                </div>
+              
+              </div>
+          </section>
+          <div class="line">
+            <div class="carets">
+              <button class="caret-leftbtn" onclick="leftScroll()">
+                <img class="caret-left" src="assets/image/caret_icon.png">
+              </button>
+              <button class="caret-rightbtn" onclick="rightScroll()">
+                <img class="caret-right" src="assets/image/caret_icon.png">
+              </button>
+            </div>
+          </div>
+          
+
+          
+
+          <section id="footer">
+            <footer class="footer">
+              <div class="footer__addr">
+                <div class="footer-logo-img"><img class="img-logo img-logo-scrolled" src="assets/image/shiromu-icon.svg"></div>
+                <h4 class="footer-logo">shiro-mu</h4>
+              </div>
+              
+              <ul class="footer__nav">
+                <li class="nav__item nav__item--extra">
+                  
+                  <ul class="nav__ul nav__ul--extra">
+                    <li class="footer-info">            
+                      Terima kasih telah mengunjungi Shiro-Mu! Rasakan kelezatan Jepang dalam setiap suapan dan nikmati pengalaman kuliner yang autentik. Kunjungi kami lagi untuk merasakan harmoni cita rasa yang istimewa. Selamat menikmati dan sampai jumpa di Shiro-Mu!
+                    </li>
+                </li>
+      
+                <li class="nav__item">
+                  <h2 class="nav__title">Contact</h2>
+                  
+                  <ul class="nav__ul">
+                    <li>
+                      <a href="#">+62 811 9128 807</a>
+                    </li>
+      
+                    <li>
+                      <a href="#">WhatsApp</a>
+                    </li>
+                    
+                    <li>
+                      <a href="#">E-Mail</a>
+                    </li>
+                    <li class="copyright">
+                      <a>&copy;2023 PT. Shigeo. <br>
+                         By N Hatta 10 PPLG 1</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            
+            </footer>
+          </section>
+          
+          <script src="assets/js/navbar.js"></script>
+          <script src="assets/js/carousel.js"></script>
+          <script src="assets/js/menu.js"></script>
+          <script src="assets/js/cart.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+Fitur "Daftar Promo" tidak bekerja dengan baik ketika menungganakan extension "Live Server"

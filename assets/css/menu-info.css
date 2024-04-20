@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'NT Josefine';
+    src: url('fonts/subset-NTJosefine.woff2') format('woff2'),
+        url('fonts/subset-NTJosefine.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
+
+#black-bg {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#menu-heading {
+    margin-top: 50px;
+    display: flex;
+    padding: 0px 100px 0px 100px;
+}
+
+#start {
+    font-size: 0px;
+}
+
+.food-heading {
+    width: 500px;
+    height: 475px;
+    padding: 0;
+    /*border-style: dotted; */
+
+}
+
+.food-heading img {
+    width: 500px;
+    margin-bottom: 100px;
+}
+
+.content {
+    /*border-style: dotted; */
+    position: relative;
+    padding: 110px 0px 0px 0px;
+}
+
+.content #title {
+    font-family: 'NT Josefine', 'Times New Roman';
+    font-size: 75px;
+}
+
+.content p {
+    font-family: 'Satoshi', sans-serif;
+    width: 500px;
+}
+
+.price_order {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    height: 75px;
+    margin-top: 20px;
+}
+
+.price {
+    font-family: 'Satoshi', sans-serif;
+    margin-bottom: 25px;
+    width: 160px;
+    height: 100%;
+}
+
+.price h2 {
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+
+.add-to-cart {
+    width: 75px;
+    height: 100%;
+    text-align: center;
+    padding: 20px 0px 15px 15px;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+    
+}
+
+.add-to-cart img {
+    width: 40px;
+}
+
+/*========================================================================================================================================*/
+
+#menu {
+    padding: 0px 100px 0px 100px;
+}
+
+.cards {
+    height: 250px;
+    padding-left: 30px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.card {
+    position: relative;
+    min-width: 170px;
+    min-height: 175px;
+    border: 1px solid black;
+    margin-right: 30px;
+    border-radius: 50% 10% 10% 10%;
+    background-color: 	#311f13;
+    cursor: pointer;
+}
+
+.cards .card:nth-last-child(1) {
+    margin-right: 30px;
+}
+
+.menu-img {
+    width: 150px;
+    position: relative;
+    top: -30px;
+    left: -30px;
+}
+
+.card-content {
+    display: flex;
+    margin-top: -32px;
+    justify-content: flex-end;
+    flex: 2;
+}
+
+.card-info {
+    height: 50px;
+    padding-bottom: 0px;
+    width: 128px;
+}
+
+.card-info h4 {
+    color: #f4decb;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 18px;
+    padding: 0 15px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-info p {
+    color: #d1beae;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 15px;
+    margin-top: 2px;
+    font-size: 12px;
+}
+.cart-light img{
+    width: 25px;
+    z-index: 1;
+    
+}
+.cart-light {
+    padding: 10px 12px 10px 7px;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*======================================================================================*/
+
+.line {
+    position: relative;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 25px;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carets {
+    display: flex;
+    padding: 0px 525px 0px 525px;
+}
+
+.caret-left {
+    width: 30px;
+}
+.caret-right {
+    width: 30px;
+    transform: scaleX(-1);
+}
+.caret-leftbtn, .caret-rightbtn {
+    cursor: pointer;
+    background-color: transparent;
+    border-style: none;
+}

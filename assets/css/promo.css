@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@font-face {
+    font-family: 'NT Josefine';
+    src: url('fonts/subset-NTJosefine.woff2') format('woff2'),
+        url('fonts/subset-NTJosefine.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+#promo {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    bottom:0;
+}
+#promo > .point {
+  height: 100px;
+}
+
+  .sushis {
+    width: 1000px;
+  }
+
+  .promo-img {
+    z-index: -1;
+    
+  }
+  
+  .promo-heading {
+    font-size: 75px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -2px;
+  }
+
+  #promo > h4 {
+    font-size: 40px;
+    font-family: ranodam;
+    margin-bottom: 0px;
+  }
+  
+  
+  .promo-form, label {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-gap: 2rem;
+  }
+  
+  label {
+    align-items: center;
+  }
+  
+  input {
+    background: white;
+    color: rgb(7 2 18);
+    transition: all 200ms ease;
+    border: 2px solid #1A1A1A;
+    height: 75px;
+    width: 500px;
+  }
+  
+  input:not(:placeholder-shown):valid {
+    border-left: 2rem solid rgb(31 132 87);
+  }
+  
+  input:not(:placeholder-shown):invalid {
+    border-left: 2rem solid rgb(209 50 81);
+  }
+  
+  input, .promo-button {
+    padding: 0 calc(5.8rem * 0.5);
+    border-radius: calc(5.8rem * 0.3);
+
+  }
+  
+  .promo-button {
+    height: 75px;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    margin-top: 18px;
+    min-height: 30px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 70%;
+    will-change: transform;
+  }
+
+  .promo-button:disabled {
+    pointer-events: none;
+  }
+  
+  .promo-button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .promo-button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
